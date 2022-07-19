@@ -1,0 +1,187 @@
+.PerconAc {
+    padding: 160px 226px;
+    background: rgba(247, 231, 200, 0.3);
+
+}
+.Spes{
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.block img {
+    margin-right: 124px;
+    width: 45%;
+    object-fit: cover;
+}
+
+.block p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #55963B;
+}
+
+.block h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    color: #29292C;
+    margin-top: 4px;
+    margin-bottom: 1rem;
+}
+
+.Document {
+    margin-top: 20px;
+}
+
+@media(min-width:0) and (max-width:650.9px) {
+    .PerconAc {
+        padding: 80px 20px 30px;
+    }
+
+    .Block90 {
+        width: 100%;
+    }
+
+    .block img {
+        margin-right: 0;
+        width: 80%;
+        margin-bottom: 1rem;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .block h1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .block p {
+        font-size: 17px;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media(min-width:651px) and (max-width:650.9px) {
+    .PerconAc {
+        padding: 60px 30px;
+    }
+
+    .Block90 {
+        width: 100%;
+    }
+
+    .block img {
+        width: 67%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .block h1 {
+        font-size: 20px;
+    }
+
+    .block p {
+        font-size: 18px;
+    }
+}
+
+@media(min-width:651px) and (max-width:950.9px) {
+    .PerconAc {
+        padding: 60px 30px;
+    }
+    .card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .Block90 {
+        width: 100%;
+    }
+
+    .block {
+        justify-content: space-between;
+    }
+
+    .block img {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        margin: 0 auto 2rem;
+    }
+
+    .Block90 {
+        width: 100%;
+    }
+
+    .block h1 {
+        font-size: 25px;
+    }
+
+    .block p {
+        font-size: 18px;
+    }
+}
+@media(min-width:951px) and (max-width:1390.9px) {
+    .PerconAc {
+        padding: 60px 30px;
+    }
+    .Block90 {
+        width: 100%;
+    }
+
+    .block {
+        justify-content: space-between;
+    }
+
+    .block img {
+        width: 45%;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        margin: 0 auto 2rem;
+    }
+
+    .Block90 {
+        width: 45%;
+    }
+
+    .block h1 {
+        font-size: 25px;
+    }
+
+    .block p {
+        font-size: 18px;
+    }
+}

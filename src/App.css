@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+}
+
+.buttonStyle {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.buttonSubmit {
+  width: 301px;
+  height: 50px !important;
+  border-radius: 10px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center !important;
+  line-height: 24px;
+  cursor: pointer;
+  background: linear-gradient(265.62deg, #e6bf4c -14.74%, #bc9520 154.51%) !important;
+  color: #ffffff !important;
+}
+
+.olma {
+  width: 100px;
+  border: 2px solid rgb(201, 196, 196);
+  height: 100px;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1s all;
+  display: none;
+}
+.Foods_Block_Card__UNWpv {
+  text-align: center;
+}
+.WhoIsTheUser {
+  background: rgba(247, 231, 200, 0.3);
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.style {
+  height: 40;
+  width: 40;
+  line-height: 40px;
+  border-radius: 4;
+  color: "#fff";
+  text-align: center;
+  font-size: 14;
+}
+
+.click {
+  border: 2px solid red !important;
+}
+
+.SpinStyle {
+  height: 100vh;
+  width: 100% !important;
+  background: rgba(56, 52, 52, 0.1) !important;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-spin-dot {
+  height: 2rem !important;
+  width: 2rem !important;
+}
+
+.App {
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.ant-drawer.ant-drawer-open .ant-drawer-mask {
+  background: #ffffff1a;
+  backdrop-filter: blur(6px);
+}
+
+.active {
+  color: #ffa700;
+  text-align: revert;
+  font-family: var(----main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.active:hover {
+  color: #ffa700;
+}
+
+.active,
+.Navlink {
+  padding: 0 1em;
+}
+
+.Navlink {
+  width: auto;
+  text-align: revert;
+  font-family: var(----main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4c3c00;
+  line-height: 24px;
+}
+
+.Navlink:hover {
+  color: #4c3c00;
+}
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+  width: auto !important;
+}
+
+.ant-btn-primary {
+  background: #cb9a39 !important;
+  border-color: none;
+}
+
+.ant-select-selection-placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 20px; */
+  /* line-height: 24px; */
+  color: #886600 !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  height: 40px !important;
+  border-radius: 10px !important;
+  /* border: 2px solid #886600 !important; */
+}
+
+.ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+  display: flex;
+  align-items: center;
+}
+
+/*
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  height: 60px !important;
+  border-radius: 10px !important;
+  border: 2px solid #151514 !important;
+} */
+
+.none {
+  border: 3px solid firebrick !important;
+}
+
+.ant-rate {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem !important;
+}
+
+@media (min-width: 0) and (max-width: 1100.9px) {
+  .ant-drawer-wrapper-body {
+    width: 90% !important;
+  }
+  .buttonSubmit {
+    width: 250px !important;
+  }
+  .Navlink,
+  .active {
+    width: auto !important;
+    margin: 1rem 0;
+  }
+
+  .ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+    width: 70% !important;
+  }
+
+  .WhoIsTheUser {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.inp{
+  margin: .5rem 0 1.5rem;
+}
+
+.select{
+  margin-top: 10px;
+}
+
+.select div,
+.select{
+  width: 100%;
+  max-width: 100%;
+  /* border: 2px solid rgb(114, 87, 31); */
+}

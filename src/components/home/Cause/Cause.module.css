@@ -1,0 +1,175 @@
+.Cause {
+  background-image: url("../../../assets/home/couse1.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5rem 0 3rem 0;
+}
+
+.Cause h1 {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  width: 970px;
+  margin: 0 auto;
+  line-height: 64px;
+  text-align: center;
+  color: #231c00;
+}
+
+.Chek {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  align-items: flex-start;
+}
+
+.advice2 img,
+.Chek img,
+.advice3 img{
+  width: 60px;
+  height: auto;
+  margin-right: 16px;
+}
+
+.diseases {
+  height: 100%;
+  justify-content: center;
+}
+
+.diseases h2,
+.Chek h2 {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 64px;
+  color: #272f36;
+}
+
+.advice_h2 {
+  width: 426px;
+}
+
+.diseases h2 {
+  margin-right: 16px;
+}
+
+.advice,
+.diseases {
+  display: flex;
+  align-items: center;
+}
+.advice {
+  margin: 168px 0;
+}
+
+.advice {
+  align-items: flex-start;
+}
+
+.img {
+  margin-top: 26px;
+}
+
+.advice3 {
+  justify-content: flex-end;
+}
+
+.diseases__block {
+  margin: 0 30px;
+  width: 40%;
+  height: 100%;
+}
+
+.diseases__block2 {
+  text-align: right;
+  margin: 0 30px;
+  width: 40%;
+  height: 100%;
+}
+@media (min-width: 0) and (max-width: 450.9px) {
+  .img {
+    height: auto;
+    margin-top: 0;
+    width: 50%;
+  }
+}
+@media (min-width: 451px) and (max-width: 900.9px) {
+  .img {
+    height: auto;
+    margin-top: 0;
+    width: 30%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 950.9px) {
+  .Cause {
+    padding: 3rem 25px;
+    background-size: 100% 100%;
+    background-size: cover;
+  }
+
+  .Chek img,
+  .advice2 img,
+  .advice img{
+    width: 40px;
+  }
+
+  .Chek {
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .diseases {
+    flex-direction: column-reverse;
+  }
+  .advice_h2 {
+    width: auto;
+  }
+  .Cause h1 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .diseases h2,
+  .Chek h2 {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .advice {
+    margin: 1rem auto 0;
+  }
+  .advice3,
+  .advice {
+    justify-content: center !important;
+    align-items: center;
+  }
+  .diseases__block,
+  .diseases__block2 {
+    width: 100%;
+  }
+}
+@media (min-width: 951px) and (max-width: 1494.9px) {
+  .Chek {
+    margin-top: 51px;
+  }
+  .advice {
+    margin: 0 0;
+  }
+  .Cause {
+    background-size: 100% 100%;
+  }
+  .diseases h2,
+  .Chek h2 {
+    font-size: 26px;
+  }
+  .advice_h2 {
+    width: auto;
+  }
+  .Cause h1 {
+    font-size: 50px;
+    width: 100%;
+  }
+}

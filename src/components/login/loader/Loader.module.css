@@ -1,0 +1,132 @@
+@property --p {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: true;
+}
+
+.loader__body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  margin: 0 0;
+  --p: 0;
+  display: grid;
+  align-items: center;
+  place-content: center;
+  transform: scale(0.5);
+  clip-path: circle(49%);
+  animation: p 10s steps(100);
+  color: hsl(calc(var(--p) * 2), 100%, 65%);
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: transparent !important;
+}
+.loader:before,
+.loader:after {
+  grid-row: 1;
+  grid-column: 1;
+}
+.loader:before {
+  border: solid 5em transparent;
+  padding: 14%;
+  border-radius: 50%;
+  --slice: calc(360deg / var(--n));
+  --s-gap: calc(var(--f) * var(--slice));
+  --solid: calc((1 - var(--f)) * var(--slice));
+  background: repeating-conic-gradient(
+      from calc(0.5 * var(--s-gap)),
+      currentcolor 0% var(--solid),
+      transparent 0% var(--slice)
+    )
+    border-box;
+  /* filter: blur(0.5px); */
+  --mask: conic-gradient(blue 0% calc(var(--p) * 1%), rgba(0, 17, 255, 0.3) 0%),
+    linear-gradient(blue, blue) border-box,
+    radial-gradient(
+      blue 0% 5.5em,
+      transparent calc(5.5em + 1px) calc(5.75em - 1px),
+      blue 5.75em calc(6em + 1px),
+      transparent calc(6em + 2px)
+    );
+  -webkit-mask: var(--mask);
+  -webkit-mask-composite: source-in, source-out;
+  content: "";
+  background-color: #e6bf4c !important;
+  margin-right: 4rem;
+}
+
+@keyframes p {
+  90%,
+  100% {
+    --p: 100;
+  }
+}
+
+.loader span {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+  margin-bottom: auto;
+  font-size: 50px;
+  margin-left: 0;
+  margin-top: 4rem;
+  top: 0;
+  bottom: 0;
+  color: #bc9520 !important;
+}
+
+.loader__text {
+  font-family: var(----main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #112d0b;
+  text-align: center;
+  margin: 0;
+}
+
+.loader__title {
+  font-family: var(----main-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+
+  text-align: center;
+
+  color: #4c3c00;
+  margin: 10rem 0 0;
+}
+
+@media (min-width: 0) and (max-width: 799.9px) {
+  .loader__title,
+  .loader__text {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .loader__title {
+    font-size: 24px;
+    margin-top: 5rem;
+  }
+
+  .loader__text {
+    font-size: 16px;
+  }
+
+  .loader{
+    margin-bottom: 1rem;
+  }
+
+  .loader__body{
+    height: auto;
+  }
+}
